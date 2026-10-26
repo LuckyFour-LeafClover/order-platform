@@ -1,0 +1,4 @@
+packages:
+  - "packages/*"      # 共享包
+  - "server"          # 后端子包
+  - "web"             # 前端子包

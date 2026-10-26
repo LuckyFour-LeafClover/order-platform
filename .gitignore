@@ -1,0 +1,30 @@
+```gitignore
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+build/
+.next/
+out/
+
+# 环境密钥（重中之重，绝不能提交）
+.env
+.env.*
+!.env.example
+
+# 日志
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 编辑器/OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# 覆盖率/缓存
+coverage/
+.turbo/
