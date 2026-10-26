@@ -1,20 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
-import { fileURLToPath, URL } from 'node:url'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+import { fileURLToPath, URL } from 'node:url';
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@order-platform/shared": resolve(__dirname, "../packages/shared/src")
-    }
+      '@order-platform/shared': resolve(__dirname, '../packages/shared/src'),
+    },
   },
   server: {
     fs: {
-      allow: ['..']
-    }
-  }
-})
+      allow: ['..'],
+    },
+  },
+});
